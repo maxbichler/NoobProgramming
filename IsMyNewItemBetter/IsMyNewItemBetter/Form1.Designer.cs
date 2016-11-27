@@ -50,6 +50,18 @@
             this.label8 = new System.Windows.Forms.Label();
             this.ResultNew = new System.Windows.Forms.TextBox();
             this.KlassenCB = new System.Windows.Forms.ComboBox();
+            this.MainStatSW = new System.Windows.Forms.TextBox();
+            this.MasterySW = new System.Windows.Forms.TextBox();
+            this.CritSW = new System.Windows.Forms.TextBox();
+            this.HasteSW = new System.Windows.Forms.TextBox();
+            this.VersalitySW = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // MainStatOld
@@ -92,7 +104,7 @@
             this.ResultOld.Location = new System.Drawing.Point(74, 256);
             this.ResultOld.Name = "ResultOld";
             this.ResultOld.Size = new System.Drawing.Size(100, 20);
-            this.ResultOld.TabIndex = 11;
+            this.ResultOld.TabIndex = 16;
             // 
             // MainStatNew
             // 
@@ -134,7 +146,7 @@
             this.button1.Location = new System.Drawing.Point(132, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 15;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -160,7 +172,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 99);
+            this.label3.Location = new System.Drawing.Point(12, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(22, 13);
             this.label3.TabIndex = 15;
@@ -187,7 +199,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 259);
+            this.label6.Location = new System.Drawing.Point(10, 259);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 18;
@@ -216,7 +228,7 @@
             this.ResultNew.Location = new System.Drawing.Point(192, 256);
             this.ResultNew.Name = "ResultNew";
             this.ResultNew.Size = new System.Drawing.Size(100, 20);
-            this.ResultNew.TabIndex = 12;
+            this.ResultNew.TabIndex = 17;
             // 
             // KlassenCB
             // 
@@ -226,11 +238,120 @@
             this.KlassenCB.Size = new System.Drawing.Size(121, 21);
             this.KlassenCB.TabIndex = 21;
             // 
+            // MainStatSW
+            // 
+            this.MainStatSW.Location = new System.Drawing.Point(464, 194);
+            this.MainStatSW.Name = "MainStatSW";
+            this.MainStatSW.Size = new System.Drawing.Size(100, 20);
+            this.MainStatSW.TabIndex = 10;
+            // 
+            // MasterySW
+            // 
+            this.MasterySW.Location = new System.Drawing.Point(464, 220);
+            this.MasterySW.Name = "MasterySW";
+            this.MasterySW.Size = new System.Drawing.Size(100, 20);
+            this.MasterySW.TabIndex = 11;
+            // 
+            // CritSW
+            // 
+            this.CritSW.Location = new System.Drawing.Point(464, 246);
+            this.CritSW.Name = "CritSW";
+            this.CritSW.Size = new System.Drawing.Size(100, 20);
+            this.CritSW.TabIndex = 12;
+            // 
+            // HasteSW
+            // 
+            this.HasteSW.Location = new System.Drawing.Point(464, 272);
+            this.HasteSW.Name = "HasteSW";
+            this.HasteSW.Size = new System.Drawing.Size(100, 20);
+            this.HasteSW.TabIndex = 13;
+            // 
+            // VersalitySW
+            // 
+            this.VersalitySW.Location = new System.Drawing.Point(464, 298);
+            this.VersalitySW.Name = "VersalitySW";
+            this.VersalitySW.Size = new System.Drawing.Size(100, 20);
+            this.VersalitySW.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(369, 197);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Main Stat Weight";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(377, 223);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Mastery Weight";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(399, 249);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Crit Weight";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(386, 275);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Haste Weight";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(370, 301);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(83, 13);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Versality Weight";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(421, 45);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(32, 13);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Class";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(464, 76);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 33;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 474);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.VersalitySW);
+            this.Controls.Add(this.HasteSW);
+            this.Controls.Add(this.CritSW);
+            this.Controls.Add(this.MasterySW);
+            this.Controls.Add(this.MainStatSW);
             this.Controls.Add(this.KlassenCB);
             this.Controls.Add(this.ResultNew);
             this.Controls.Add(this.label8);
@@ -284,6 +405,18 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox ResultNew;
         private System.Windows.Forms.ComboBox KlassenCB;
+        private System.Windows.Forms.TextBox MainStatSW;
+        private System.Windows.Forms.TextBox MasterySW;
+        private System.Windows.Forms.TextBox CritSW;
+        private System.Windows.Forms.TextBox HasteSW;
+        private System.Windows.Forms.TextBox VersalitySW;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

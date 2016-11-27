@@ -29,9 +29,19 @@ namespace IsMyNewItemBetter
         public static double resultn;
 
         // KLASSEN ARRAY
-        string[] klassen = { "Rogue", "Mage", "Priest", "Demon Hunter", "Hunter", "Monk", "Death Knight", "Warrior", "Gayadin", "Warlock", "Schaman" };
+        string[] klassen = { "Rogue", "Mage", "Priest", "Demon Hunter", "Hunter", "Monk", "Death Knight", "Warrior", "Paladin", "Warlock", "Schaman", "Druid" };
         string[] rogue = { "Assassination", "Outlaw", "Subtlety" };
         string[] priest = { "Holy", "Shadow", "Discipline" };
+        string[] demonHunter = { "Havoc", "Vengeance" };
+        string[] warlock = { "Affliction", "Demonology", "Destruction" };
+        string[] paladin = { "Holy", "Protection", "Retribution" };
+        string[] warrior = { "Arms", "Fury", "Protection" };
+        string[] hunter = { "Marksmanship", "Survival", "Beast Mastery"};
+        string[] monk = { "Brewmaster", "Mistweaver", "Windwalker" };
+        string[] deathKnight = { "Unholy", "Frost", "Blood" };
+        string[] mage = { "Arcan", "Frost", "Fire" };
+        string[] schaman = { "Elemental", "Restoration", "Enhancement" };
+        string[] druid = { "Restoration", "Balance", "Feral", "Guardian" };
 
         public Form1()
         {
@@ -63,21 +73,21 @@ namespace IsMyNewItemBetter
             try
             {
                 // TEXTBOXEN EINLESEN OLD
-                Ao = double.Parse(MainStatOld.Text);
-                Mo = double.Parse(MasteryOld.Text);
-                Co = double.Parse(CritOld.Text);
-                Vo = double.Parse(VersalityOld.Text);
-                Ho = double.Parse(HasteOld.Text);
+                double.TryParse(MainStatOld.Text,out Ao);
+                double.TryParse(MasteryOld.Text, out Mo);
+                double.TryParse(CritOld.Text, out Co);
+                double.TryParse(VersalityOld.Text, out Vo);
+                double.TryParse(HasteOld.Text, out Ho);
                 resulto = Ao + (Mo * 0.84) + (Co * 0.68) + (Vo * 0.67) + (Ho * 0.46);
                 Math.Round(resulto, 1);
                 ResultOld.Text = resulto.ToString();
 
                 // TEXTBOXEN EINLESEN NEW
-                An = double.Parse(MainStatNew.Text);
-                Mn = double.Parse(MasteryNew.Text);
-                Cn = double.Parse(CritNew.Text);
-                Vn = double.Parse(VersalityNew.Text);
-                Hn = double.Parse(HasteNew.Text);
+                double.TryParse(MainStatNew.Text, out An);
+                double.TryParse(MasteryNew.Text, out Mn);
+                double.TryParse(CritNew.Text, out Cn);
+                double.TryParse(VersalityNew.Text, out Vn);
+                double.TryParse(HasteNew.Text, out Hn);
                 resultn = An + (Mn * 0.84) + (Cn * 0.68) + (Vn * 0.67) + (Hn * 0.46);
                 Math.Round(resultn, 1);
                 ResultNew.Text = resultn.ToString();
