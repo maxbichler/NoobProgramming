@@ -1,9 +1,0 @@
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\bin\Debug\IsMyNewItemBetter.exe.config
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\bin\Debug\IsMyNewItemBetter.exe
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\bin\Debug\IsMyNewItemBetter.pdb
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\obj\Debug\IsMyNewItemBetter.csprojResolveAssemblyReference.cache
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\obj\Debug\IsMyNewItemBetter.Form1.resources
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\obj\Debug\IsMyNewItemBetter.Properties.Resources.resources
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\obj\Debug\IsMyNewItemBetter.csproj.GenerateResource.Cache
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\obj\Debug\IsMyNewItemBetter.exe
-C:\Users\max\Desktop\VS Projects\IsMyNewItemBetter\IsMyNewItemBetter\obj\Debug\IsMyNewItemBetter.pdb
