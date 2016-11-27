@@ -61,7 +61,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SpecCB = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MainStatOld
@@ -237,6 +240,7 @@
             this.KlassenCB.Name = "KlassenCB";
             this.KlassenCB.Size = new System.Drawing.Size(121, 21);
             this.KlassenCB.TabIndex = 21;
+            this.KlassenCB.SelectedIndexChanged += new System.EventHandler(this.KlassenCB_SelectedIndexChanged);
             // 
             // MainStatSW
             // 
@@ -276,47 +280,47 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(369, 197);
+            this.label9.Location = new System.Drawing.Point(406, 197);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 13);
+            this.label9.Size = new System.Drawing.Size(52, 13);
             this.label9.TabIndex = 27;
-            this.label9.Text = "Main Stat Weight";
+            this.label9.Text = "Main Stat";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(377, 223);
+            this.label10.Location = new System.Drawing.Point(409, 223);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 13);
+            this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 28;
-            this.label10.Text = "Mastery Weight";
+            this.label10.Text = "Mastery";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(399, 249);
+            this.label11.Location = new System.Drawing.Point(431, 249);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(59, 13);
+            this.label11.Size = new System.Drawing.Size(22, 13);
             this.label11.TabIndex = 29;
-            this.label11.Text = "Crit Weight";
+            this.label11.Text = "Crit";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(386, 275);
+            this.label12.Location = new System.Drawing.Point(423, 275);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 13);
+            this.label12.Size = new System.Drawing.Size(35, 13);
             this.label12.TabIndex = 30;
-            this.label12.Text = "Haste Weight";
+            this.label12.Text = "Haste";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(370, 301);
+            this.label13.Location = new System.Drawing.Point(412, 301);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 13);
+            this.label13.Size = new System.Drawing.Size(46, 13);
             this.label13.TabIndex = 31;
-            this.label13.Text = "Versality Weight";
+            this.label13.Text = "Versality";
             // 
             // label14
             // 
@@ -327,20 +331,51 @@
             this.label14.TabIndex = 32;
             this.label14.Text = "Class";
             // 
-            // comboBox1
+            // SpecCB
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(464, 76);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 33;
+            this.SpecCB.FormattingEnabled = true;
+            this.SpecCB.Location = new System.Drawing.Point(464, 76);
+            this.SpecCB.Name = "SpecCB";
+            this.SpecCB.Size = new System.Drawing.Size(121, 21);
+            this.SpecCB.TabIndex = 33;
+            this.SpecCB.SelectedIndexChanged += new System.EventHandler(this.SpecCB_SelectedIndexChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(421, 79);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(32, 13);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Spec";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(10, 433);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(98, 13);
+            this.label16.TabIndex = 35;
+            this.label16.Text = "Version: Legion 7.1";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(461, 168);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(63, 13);
+            this.label17.TabIndex = 36;
+            this.label17.Text = "Stat Weight";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 474);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.SpecCB);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -416,7 +451,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox SpecCB;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
 

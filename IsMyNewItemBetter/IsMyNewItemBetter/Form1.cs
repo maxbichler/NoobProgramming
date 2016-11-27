@@ -13,7 +13,7 @@ namespace IsMyNewItemBetter
     public partial class Form1 : Form
     {
         // OLD
-        public static double Ao = 0;
+        public static double MSo = 0;
         public static double Mo = 0;
         public static double Co = 0;
         public static double Vo = 0;
@@ -21,7 +21,7 @@ namespace IsMyNewItemBetter
         public static double resulto;
 
         // NEW
-        public static double An = 0;
+        public static double MSn = 0;
         public static double Mn = 0;
         public static double Cn = 0;
         public static double Vn = 0;
@@ -73,22 +73,22 @@ namespace IsMyNewItemBetter
             try
             {
                 // TEXTBOXEN EINLESEN OLD
-                double.TryParse(MainStatOld.Text,out Ao);
+                double.TryParse(MainStatOld.Text,out MSo);
                 double.TryParse(MasteryOld.Text, out Mo);
                 double.TryParse(CritOld.Text, out Co);
                 double.TryParse(VersalityOld.Text, out Vo);
                 double.TryParse(HasteOld.Text, out Ho);
-                resulto = Ao + (Mo * 0.84) + (Co * 0.68) + (Vo * 0.67) + (Ho * 0.46);
+                resulto = MSo + (Mo * 0.84) + (Co * 0.68) + (Vo * 0.67) + (Ho * 0.46);
                 Math.Round(resulto, 1);
                 ResultOld.Text = resulto.ToString();
 
                 // TEXTBOXEN EINLESEN NEW
-                double.TryParse(MainStatNew.Text, out An);
+                double.TryParse(MainStatNew.Text, out MSn);
                 double.TryParse(MasteryNew.Text, out Mn);
                 double.TryParse(CritNew.Text, out Cn);
                 double.TryParse(VersalityNew.Text, out Vn);
                 double.TryParse(HasteNew.Text, out Hn);
-                resultn = An + (Mn * 0.84) + (Cn * 0.68) + (Vn * 0.67) + (Hn * 0.46);
+                resultn = MSn + (Mn * 0.84) + (Cn * 0.68) + (Vn * 0.67) + (Hn * 0.46);
                 Math.Round(resultn, 1);
                 ResultNew.Text = resultn.ToString();
             }
@@ -96,6 +96,39 @@ namespace IsMyNewItemBetter
             {
 
                 throw;
+            }
+        }
+
+        // FÜLLE SPEC COMBOBOX BETREFFEND DER KLASSE
+        private void KlassenCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (KlassenCB.SelectedIndex)
+            {
+                case 0: SpecCB.DataSource = rogue; break;
+                case 1: SpecCB.DataSource = mage; break;
+                case 2: SpecCB.DataSource = priest; break;
+                case 3: SpecCB.DataSource = demonHunter; break;
+                case 4: SpecCB.DataSource = hunter; break;
+                case 5: SpecCB.DataSource = monk; break;
+                case 6: SpecCB.DataSource = deathKnight; break;
+                case 7: SpecCB.DataSource = warrior; break;
+                case 8: SpecCB.DataSource = paladin; break;
+                case 9: SpecCB.DataSource = warlock; break;
+                case 10: SpecCB.DataSource = schaman; break;
+                case 11: SpecCB.DataSource = druid; break;
+                default: SpecCB.DataSource = rogue; break;
+            }
+        }
+
+        // FÜLLE ENTSPRECHENDEN STAT WEIGHTS IN DIE TEXTBOXEN
+        private void SpecCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (SpecCB.SelectedIndex)
+            {
+                case 0: MainStatSW.Text = 1.ToString(); break;
+                
+                default:
+                    break;
             }
         }
     }
