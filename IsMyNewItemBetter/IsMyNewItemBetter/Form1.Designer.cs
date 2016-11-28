@@ -65,6 +65,9 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.link = new System.Windows.Forms.Label();
+            this.Ausgabe = new System.Windows.Forms.Label();
+            this.Update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MainStatOld
@@ -367,11 +370,43 @@
             this.label17.TabIndex = 36;
             this.label17.Text = "Stat Weight";
             // 
+            // link
+            // 
+            this.link.AutoSize = true;
+            this.link.Location = new System.Drawing.Point(393, 415);
+            this.link.Name = "link";
+            this.link.Size = new System.Drawing.Size(205, 13);
+            this.link.TabIndex = 37;
+            this.link.Text = "Dont know your Stat Weights? Click here!";
+            this.link.Click += new System.EventHandler(this.link_Click);
+            // 
+            // Ausgabe
+            // 
+            this.Ausgabe.AutoSize = true;
+            this.Ausgabe.Location = new System.Drawing.Point(37, 298);
+            this.Ausgabe.Name = "Ausgabe";
+            this.Ausgabe.Size = new System.Drawing.Size(119, 13);
+            this.Ausgabe.TabIndex = 38;
+            this.Ausgabe.Text = "Is your new item better?";
+            // 
+            // Update
+            // 
+            this.Update.Location = new System.Drawing.Point(449, 338);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(75, 23);
+            this.Update.TabIndex = 39;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            this.Update.Click += new System.EventHandler(this.Update_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 474);
+            this.Controls.Add(this.Update);
+            this.Controls.Add(this.Ausgabe);
+            this.Controls.Add(this.link);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -455,6 +490,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label link;
+        private System.Windows.Forms.Label Ausgabe;
+        private System.Windows.Forms.Button Update;
     }
 }
 
