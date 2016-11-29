@@ -1,0 +1,12 @@
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\bin\Release\IsMyNewItemBetter.exe.config
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\bin\Release\IsMyNewItemBetter.exe
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\bin\Release\IsMyNewItemBetter.pdb
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\bin\Release\GitHubSharp.dll
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\bin\Release\Newtonsoft.Json.dll
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\bin\Release\Newtonsoft.Json.xml
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\obj\Release\IsMyNewItemBetter.csprojResolveAssemblyReference.cache
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\obj\Release\IsMyNewItemBetter.Form1.resources
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\obj\Release\IsMyNewItemBetter.Properties.Resources.resources
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\obj\Release\IsMyNewItemBetter.csproj.GenerateResource.Cache
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\obj\Release\IsMyNewItemBetter.exe
+F:\Github\NoobProgramming\IsMyNewItemBetter\IsMyNewItemBetter\obj\Release\IsMyNewItemBetter.pdb

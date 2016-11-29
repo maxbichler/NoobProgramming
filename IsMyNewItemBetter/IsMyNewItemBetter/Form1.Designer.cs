@@ -445,7 +445,7 @@
             this.Controls.Add(this.MasteryOld);
             this.Controls.Add(this.MainStatOld);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Is my new item better?";
             this.ResumeLayout(false);
             this.PerformLayout();
 
